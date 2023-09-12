@@ -11,11 +11,119 @@
 
 <body>
     <header>
-
+    
+        <section>
+            <div class="flex flex-row justify-around align-middle  pt-10 bg-gray-300 shadow-2xl h-32">
+                <div>
+                    <img src="image/Logo.png" alt="">
+                </div>
+    
+                <div class="">
+                    <button id="sort_by" onclick="video_sort()" class="btn btn-outline ">Sort By Views</button>
+                </div>
+    
+                <div class="">
+                    <button class="btn btn-warning w-40">Blog</button>
+                </div>
+            </div>
+        </section>
+    
     </header>
 
     <main>
+        <section class="m-20">
+            <h2 class="text-red-600 text-3xl"> Ques: Discuss the scope of var, let, and const .</h2>
+            <div class="text-justify">
+                <h4 class="text-2xl text-green-600 mt-6">Ans : </h4>
+                <p class="text-xl text-justify">Var => The scope of a var variable is functional scope.
+                    It can be updated and re-declared into the scope.<br>
+                    It can be declared without initialization.
+                    It can be accessed without initialization as its default value is “undefined”.<br>
+                    hoisting done, with initializing as ‘default’ value
+                    <br>
+                    <br>
+                    let => The scope of a let variable is block scope.
+                    It can be updated but cannot be re-declared into the scope.<br>
+                    It can be declared without initialization.
+                    It cannot be accessed without initialization otherwise it will give ‘referenceError’.<br>
+                    Hoisting is done, but not initialized (this is the reason for the error when we access the let variable before
+                    declaration/initialization)
 
+                    <br>
+                    <br>
+                    Const => The scope of a const variable is block scope.
+                    It cannot be updated or re-declared into the scope.<br>
+                    It cannot be declared without initialization.
+                    It cannot be accessed without initialization, as it cannot be declared without initialization.<br>
+                    Hoisting is done, but not initialized (this is the reason for the error when we access the const variable before
+                    declaration/initialization)
+
+                </p>
+            </div>
+        </section>
+        <section class="m-20">
+            <h2 class="text-red-600 text-3xl"> Ques: Tell us the use cases of null and undefined .</h2>
+            <div class="text-justify">
+                <h4 class="text-2xl text-green-600 mt-6">Ans : </h4>
+                <p class="text-xl text-justify">undefine =>undefined means avariable has been declared but has not yet been assigned a value.<br> undefined is a type by itself (undefined). Unassigned
+                    variables are initialized by JavaScript with a default value of undefined.
+                <br><br>
+                //demonstrating usage of undefined in javascript<br>
+                var n;<br>
+                <br><br>
+                console.log(n);
+                <br><br>
+                //undefined<br>
+                Here as the variable is declared but not assigned to any value, the variable by default is assigned a value of
+                undefined.
+                    <br>
+                    <br>
+                    NULL =>  null is an object. It can be assigned to a variable as a representation of no value.<br>
+                     JavaScript never sets a value to null. That must be done programmatically.<br>
+                    
+                    For example, when you do not know the value initially you can assign a null to a variable. Let’s see an example.<br>
+                    <br>
+                    
+                    //demonstrating usage of null in javascript<br>
+                    var n = null;<br>
+                    
+                    //later in your program<br>
+                    <br>
+                    n = array.slice(0, 2);<br>
+                    <br>
+                    //example
+                    Here, in the example above, the variable n is given an initial value of null.<br> Later, in the program, the value of the
+                    variable has been calculated from an expression.
+                    
+        
+                </p>
+            </div>
+        </section>
+
+        <section class="m-20">
+            <h2 class="text-red-600 text-3xl"> Ques: What do you mean by REST API?</h2>
+            <div class="text-justify">
+                <h4 class="text-2xl text-green-600 mt-6">Ans : </h4>
+                <p class="text-xl text-justify">
+
+                    <h3 class="text-2xl">What Is REST?</h3><br>
+                    <p class="text-2xl">Representational State Transfer, or REST, is the architectural style of the web, which allows communicating standards
+                    between client and server. A client requests a resource, and a server will respond with the representation of that
+                    resource that can be easily interpreted.</p><br><br>
+                    
+                    <h3 class="text-2xl">What Is a REST API?</h3><br>
+                    <p class="text-2xl">A REST API is a type of API that responds to a client’s request in a standardized representation, which is easy to
+                    interpret because of the uniform interface of component constraints. The response format for REST comes in HTTP, which
+                    can be JSON (JavaScript Object Notation), HTML, XLT, Python, PHP or plain text. Most developers use JSON format because
+                    it is universal and supports any language for humans and machines to interpret.
+                    
+                    In a REST API, sometimes called RESTful API, a request must come through HTTP to a stateless protocol that does not
+                    store clients’ information during the get request session. Each request is usually disparate and unrelated.</p>
+                    
+                    
+                </p>
+            </div>
+        </section>
     </main>
 
     <footer>
